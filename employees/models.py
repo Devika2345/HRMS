@@ -8,5 +8,5 @@ class Employee(models.Model):
     date_of_joining = models.DateField()
     attendance = models.IntegerField()  
 
-    def _str_(self):
+    def __str__(self):
         return self.name
